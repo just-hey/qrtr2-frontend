@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="src/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">soapKeeper</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" id="homePage">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="therapists.html" id="therapistsPage">Therapists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clients.html" id="clientsPage">Clients</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-4" id="leftSide">
+          <!-- LEFT SIDE -->
+          <h5>All notes on file</h5>
+          <ul id="note_list">
+
+          </ul>
+        </div>
+
+        <div class="col col-8">
+          <h5>Create a new SOAP note</h5>
+          <form action="" method="post" id="createNoteForm">
+            Therapist ID: <input type="number" id="tID"><br><br>
+            Client ID: <input type="number" id="cID"><br><br>
+            <textarea rows="8" cols="135" id="flex">  </textarea> <br>
+            <button type="button" class="btn btn-primary btn-lg" value="Submit" id="newNote">Create New</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

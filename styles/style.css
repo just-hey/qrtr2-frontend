@@ -1,0 +1,30 @@
+#submitBtn {
+  justify-content: center;
+}
+
+.col {
+  text-align: center;
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#center {
+  padding: 1rem;
+}
+
+#leftSide {
+  padding: 1rem;
+}
+
+#rightSide {
+  padding: 1rem;
+}
+
+#flex {
+  width: 80%;
+  height: auto;
+}

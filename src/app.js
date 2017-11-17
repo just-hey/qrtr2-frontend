@@ -1,4 +1,5 @@
-const baseURL = 'http://localhost:3000/'
+// const baseURL = 'http://localhost:3000/'
+const baseURL = 'https://damp-atoll-31773.herokuapp.com/'
 
 //on the home page, this is a button not the nav bar
 $('#listTherapists').on('click', () => {
